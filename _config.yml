@@ -23,7 +23,7 @@ repository               : "jmcely-hub/jmcely-hub.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile_pic.jpeg"
+  avatar           : "images/profile_pic.png"
   name             : "Juan Manuel Cely"  
   bio              : "Tropical Forest Ecology"
   employer         : "https://lsa.umich.edu/eeb"
