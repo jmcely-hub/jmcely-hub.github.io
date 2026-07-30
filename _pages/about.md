@@ -33,14 +33,15 @@ Feel free to explore my publications, current projects, CV, and contact informat
 My current projects focus on:
 
 - Testing how ecological niches during early ontogeny shape species abundance in adult communities.
-- Investigating coordination among **hydraulic function, carbon economics, and demographic performance**.
+- Investigating coordination among hydraulic function, carbon economics, and demographic performance.
+- Understanding how defense strategies have shaped whole-plant function
 - Identifying the mechanisms underlying species turnover between tropical rainforests and dry forests.
 
 ---
 
 ## Contact
 
-**Email:** jcely@umich.edu
+**Email:** jmcely@umich.edu
 
 Department of Ecology and Evolutionary Biology  
 University of Michigan
