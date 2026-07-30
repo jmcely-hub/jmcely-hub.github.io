@@ -23,7 +23,7 @@ repository               : "jmcely-hub/jmcely-hub.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "images/profile_pic.png"
+  avatar           : "profile_pic.png"
   name             : "Juan Manuel Cely"  
   bio              : "Tropical Forest Ecology"
   employer         : "https://lsa.umich.edu/eeb"
@@ -45,7 +45,7 @@ author:
 
   # Social media
   instagram        : "jmcely"
-  linkedin         : "https://www.linkedin.com/in/jmcely/?locale=es"
+  linkedin         : "https://www.linkedin.com/in/jmcely"
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
