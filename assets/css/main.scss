@@ -37,3 +37,8 @@
     "layout/sidebar",
     "layout/json_cv"
 ;
+
+/* Custom: larger profile photo in the sidebar */
+.author__avatar img {
+  max-width: 100%;
+}
