@@ -11,9 +11,7 @@ redirect_from:
 
 I am **Juan Manuel Cely**, a Ph.D. student in the Department of Ecology and Evolutionary Biology at the University of Michigan, where I am a member of the [Functional Forest Ecology Lab](https://sites.lsa.umich.edu/umanalab/) led by Professor María Natalia Umaña.
 
-My long-term goal is to contribute to our understanding of why tropical forests are so diverse. I am particularly interested in how plant physiology shapes demographic processes and how these processes ultimately drive community assembly. I combine field experiments, long-term forest monitoring, plant functional trait measurements, and statistical modeling to address these questions.
-
-Most of my work takes place in the tropical dry forests of Colombia, and I am currently seeking opportunities to expand my research to other Neotropical countries.
+My long-term goal is to contribute to our understanding of the megadiverse tropical forests. I am particularly interested in how trees' physiology shapes demographic processes and how these processes ultimately drive the assemblage of communities. Most of my work has taken place in the tropical dry forests of Colombia, and I am currently seeking opportunities to expand my research to other Neotropical forests.
 
 Feel free to explore my publications, current projects, CV, and contact information throughout this website.
 
