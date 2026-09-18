@@ -42,3 +42,8 @@
 .author__avatar img {
   max-width: 100%;
 }
+
+/* Custom: smaller titles in the Publications list */
+.archive__item-title:has(a[href*="/publication/"]) {
+  font-size: 1.1rem;
+}
