@@ -24,6 +24,18 @@ redirect_from:
 .pl-close{position:absolute;top:12px;right:16px;background:none;border:0;color:#fff;font-size:34px;cursor:pointer;line-height:1;}
 </style>
 
+<h2 class="archive__subtitle">Blog Posts</h2>
+
+{% capture written_year %}'None'{% endcapture %}
+{% for post in site.posts %}
+  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+  {% if year != written_year %}
+    <h3 id="{{ year | slugify }}">{{ year }}</h3>
+    {% capture written_year %}{{ year }}{% endcapture %}
+  {% endif %}
+  {% include archive-single.html %}
+{% endfor %}
+
 <h2 class="archive__subtitle">Photo Library</h2>
 
 <div class="pl-grid">
@@ -54,15 +66,3 @@ redirect_from:
   document.addEventListener('keydown',function(e){if(!box.classList.contains('on'))return; if(e.key==='Escape')plClose(); if(e.key==='ArrowRight')plStep(1); if(e.key==='ArrowLeft')plStep(-1);});
 })();
 </script>
-
-<h2 class="archive__subtitle">Blog Posts</h2>
-
-{% capture written_year %}'None'{% endcapture %}
-{% for post in site.posts %}
-  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-  {% if year != written_year %}
-    <h3 id="{{ year | slugify }}">{{ year }}</h3>
-    {% capture written_year %}{{ year }}{% endcapture %}
-  {% endif %}
-  {% include archive-single.html %}
-{% endfor %}
