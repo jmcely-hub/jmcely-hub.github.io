@@ -15,6 +15,8 @@ My long-term goal is to contribute to our understanding of the megadiverse tropi
 
 Feel free to explore my publications, current projects, CV, and contact information throughout this website.
 
+**Email:** jmcely [at] umich [dot] edu
+
 ---
 
 ## Research Interests
@@ -39,7 +41,7 @@ My current projects focus on:
 
 ## Contact
 
-**Email:** jmcely@umich.edu
+**Email:** jmcely [at] umich [dot] edu
 
 Department of Ecology and Evolutionary Biology  
 University of Michigan
