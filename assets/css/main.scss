@@ -47,3 +47,12 @@
 .archive__item-title:has(a[href*="/publication/"]) {
   font-size: 1.1rem;
 }
+
+/* Custom: smaller footer */
+.page__footer { margin-top: 1.5em; }
+.page__footer footer { margin-top: 0.4em; padding-bottom: 0.4em; }
+.page__footer-follow .social-icons { margin: 0; }
+.page__footer-follow,
+.page__footer-copyright { font-size: 0.65em; line-height: 1.4; }
+.page__footer-follow li,
+.page__footer-follow a { font-size: inherit; }
