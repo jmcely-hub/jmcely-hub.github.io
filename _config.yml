@@ -28,7 +28,7 @@ author:
   bio              : "Tropical Forest Ecology"
   employer         : "University of Michigan"
   uri              : # URL
-  email            : "jmcely@umich.edu" 
+  email            :  
 
   # Academic websites
   googlescholar    : "https://scholar.google.com/citations?user=U3eFsGAAAAAJ&hl"
@@ -39,12 +39,12 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "jmcely-hub"
+  github           : 
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  instagram        : "jmcely"
+  instagram        : 
   linkedin         : "https://www.linkedin.com/in/jmcely"
 
 # Publication Category - The following the list of publication categories and their headings
