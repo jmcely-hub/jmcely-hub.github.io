@@ -1,18 +1,66 @@
 ---
 layout: archive
 permalink: /year-archive/
-title: "Blog posts"
+title: "Photos & Blog Posts"
 author_profile: true
 redirect_from:
   - /wordpress/blog-posts/
 ---
 
 {% include base_path %}
+
+<style>
+.pl-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1.2em;margin:1em 0 2.5em;}
+.pl-item{margin:0;}
+.pl-item img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:8px;cursor:zoom-in;display:block;background:#eee;transition:transform .15s ease;}
+.pl-item img:hover{transform:scale(1.02);}
+.pl-item figcaption{font-size:.72em;line-height:1.4;margin-top:.5em;color:inherit;opacity:.85;}
+.pl-box{display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:9999;align-items:center;justify-content:center;flex-direction:column;padding:2em 1em;}
+.pl-box.on{display:flex;}
+.pl-box img{max-width:92vw;max-height:78vh;object-fit:contain;border-radius:6px;}
+.pl-box p{color:#fff;max-width:760px;text-align:center;font-size:.9em;margin:1em auto 0;}
+.pl-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.15);color:#fff;border:0;border-radius:50%;width:44px;height:44px;font-size:26px;line-height:44px;padding:0;cursor:pointer;}
+.pl-prev{left:12px;} .pl-next{right:12px;}
+.pl-close{position:absolute;top:12px;right:16px;background:none;border:0;color:#fff;font-size:34px;cursor:pointer;line-height:1;}
+</style>
+
+<h2 class="archive__subtitle">Photo Library</h2>
+
+<div class="pl-grid">
+{% for p in site.data.photos %}
+  <figure class="pl-item">
+    <img src="https://lh3.googleusercontent.com/d/{{ p.id }}=w800" data-full="https://lh3.googleusercontent.com/d/{{ p.id }}=w2000" data-alt="https://drive.google.com/thumbnail?id={{ p.id }}&sz=w2000" alt="{{ p.caption | escape }}" loading="lazy" onerror="this.onerror=null;this.src='https://drive.google.com/thumbnail?id={{ p.id }}&sz=w800'" onclick="plOpen({{ forloop.index0 }})">
+    <figcaption>{{ p.caption }}</figcaption>
+  </figure>
+{% endfor %}
+</div>
+
+<div class="pl-box" id="plBox" onclick="if(event.target===this)plClose()">
+  <button class="pl-close" aria-label="Close" onclick="plClose()">&times;</button>
+  <button class="pl-nav pl-prev" aria-label="Previous photo" onclick="plStep(-1)">&#8249;</button>
+  <img id="plImg" alt="">
+  <p id="plCap"></p>
+  <button class="pl-nav pl-next" aria-label="Next photo" onclick="plStep(1)">&#8250;</button>
+</div>
+
+<script>
+(function(){
+  var items=[].slice.call(document.querySelectorAll('.pl-item img')), box=document.getElementById('plBox'), im=document.getElementById('plImg'), cap=document.getElementById('plCap'), k=0;
+  function show(i){k=(i+items.length)%items.length; var s=items[k]; im.onerror=function(){im.onerror=null; im.src=s.dataset.alt;}; im.src=s.dataset.full; im.alt=s.alt; cap.textContent=s.alt;}
+  window.plOpen=function(i){show(i); box.classList.add('on'); document.body.style.overflow='hidden';};
+  window.plClose=function(){box.classList.remove('on'); document.body.style.overflow='';};
+  window.plStep=function(d){show(k+d);};
+  document.addEventListener('keydown',function(e){if(!box.classList.contains('on'))return; if(e.key==='Escape')plClose(); if(e.key==='ArrowRight')plStep(1); if(e.key==='ArrowLeft')plStep(-1);});
+})();
+</script>
+
+<h2 class="archive__subtitle">Blog Posts</h2>
+
 {% capture written_year %}'None'{% endcapture %}
 {% for post in site.posts %}
   {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
   {% if year != written_year %}
-    <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
+    <h3 id="{{ year | slugify }}">{{ year }}</h3>
     {% capture written_year %}{{ year }}{% endcapture %}
   {% endif %}
   {% include archive-single.html %}
