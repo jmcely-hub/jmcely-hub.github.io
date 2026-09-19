@@ -15,7 +15,7 @@ redirect_from:
 .pl-item img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:8px;cursor:zoom-in;display:block;background:#eee;transition:transform .15s ease;}
 .pl-item img:hover{transform:scale(1.02);}
 .pl-item figcaption{font-size:.72em;line-height:1.4;margin-top:.5em;color:inherit;opacity:.85;}
-.pl-box{display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:9999;align-items:center;justify-content:center;flex-direction:column;padding:2em 1em;}
+.pl-box{display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:100000;align-items:center;justify-content:center;flex-direction:column;padding:2em 1em;}
 .pl-box.on{display:flex;}
 .pl-box img{max-width:92vw;max-height:78vh;object-fit:contain;border-radius:6px;}
 .pl-box p{color:#fff;max-width:760px;text-align:center;font-size:.9em;margin:1em auto 0;}
@@ -46,6 +46,7 @@ redirect_from:
 <script>
 (function(){
   var items=[].slice.call(document.querySelectorAll('.pl-item img')), box=document.getElementById('plBox'), im=document.getElementById('plImg'), cap=document.getElementById('plCap'), k=0;
+  document.body.appendChild(box);
   function show(i){k=(i+items.length)%items.length; var s=items[k]; im.onerror=function(){im.onerror=null; im.src=s.dataset.alt;}; im.src=s.dataset.full; im.alt=s.alt; cap.textContent=s.alt;}
   window.plOpen=function(i){show(i); box.classList.add('on'); document.body.style.overflow='hidden';};
   window.plClose=function(){box.classList.remove('on'); document.body.style.overflow='';};
