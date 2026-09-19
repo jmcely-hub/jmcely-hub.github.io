@@ -56,3 +56,10 @@
 .page__footer-copyright { font-size: 0.65em; line-height: 1.4; }
 .page__footer-follow li,
 .page__footer-follow a { font-size: inherit; }
+
+/* Custom: bigger profile photo on phones */
+@media (max-width: 57.8124em) {
+  .author__avatar { width: 96px; }
+  .author__avatar img { width: 96px; height: 96px; max-width: none; object-fit: cover; }
+  .author__content { vertical-align: middle; padding-left: 15px; }
+}
