@@ -1,0 +1,27 @@
+# Photo Library — photos are stored in Google Drive (folder "Photos_website").
+# To add a photo: put it in the Drive folder, copy its file ID from the share link
+# (drive.google.com/file/d/<ID>/view), and add a new entry below with a caption.
+
+- id: 16r3Ii0sJoLWEwnwPgps7LfhCWfn5_wEp
+  caption: "Amazing Latin American researchers attending the Tropical Ecology and Conservation field course, offered annually by the Organization for Tropical Studies (OTS)."
+
+- id: 1fX75bMc1U5AJMIhnC4eQe0R7RJ0N9OsB
+  caption: "ETC students and professors :)"
+
+- id: 1AufFTTVgP9R7J68yaqcmlsWDsFYYoBlT
+  caption: "One of our field sites in the marvelous Tayrona National Park, Colombia."
+
+- id: 1B1Jq6-Rh0xfuiDSY2vegAW0opuNNPxQs
+  caption: "Doing tropical dry forest fieldwork with Peter Williams back in 2023."
+
+- id: 1-oX_rO8SYvfDClg6LHwip9t2IiW7iAqX
+  caption: "Doing fieldwork in Colorados National Park with Larissa Lotti and our good friends, park rangers Ever and Victor."
+
+- id: 1Er54GvpAa_9yAZ5psZlN9Fc1iEud_Zbe
+  caption: "With Valeria Meneses, a Colombian undergraduate student, and Larissa Lotti doing fieldwork in 2026."
+
+- id: 13Q32sQkQgTcRqTOsyWYEpOL2n5mRIkKK
+  caption: "Hiking the mountains of Fusagasugá in 2024 with my very good friends."
+
+- id: 14BY9bxNq2YhmbLN_FbfoZRVZnKykKsiH
+  caption: "Hiking the mountains of Parque Chicaque, near Bogotá."
