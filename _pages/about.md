@@ -1,4 +1,5 @@
 ---
+ref: home
 permalink: /
 title: ""
 author_profile: true

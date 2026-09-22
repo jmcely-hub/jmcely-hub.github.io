@@ -1,27 +1,36 @@
 # Photo Library — photos are stored in Google Drive (folder "Photos_website").
 # To add a photo: put it in the Drive folder, copy its file ID from the share link
 # (drive.google.com/file/d/<ID>/view), and add a new entry below with a caption.
+# Add `caption_es` with the Spanish caption (if missing, the English one is shown).
 
 - id: 16r3Ii0sJoLWEwnwPgps7LfhCWfn5_wEp
   caption: "Amazing Latin American researchers attending the Tropical Ecology and Conservation field course, offered annually by the Organization for Tropical Studies (OTS)."
+  caption_es: "Increíbles investigadores latinoamericanos en el curso de campo de Ecología Tropical y Conservación, que ofrece cada año la Organización para Estudios Tropicales (OET)."
 
 - id: 1fX75bMc1U5AJMIhnC4eQe0R7RJ0N9OsB
   caption: "ETC students and professors :)"
+  caption_es: "Estudiantes y profesores del curso ETC :)"
 
 - id: 1AufFTTVgP9R7J68yaqcmlsWDsFYYoBlT
   caption: "One of our field sites in the marvelous Tayrona National Park, Colombia."
+  caption_es: "Uno de nuestros sitios de estudio en el maravilloso Parque Nacional Natural Tayrona, Colombia."
 
 - id: 1B1Jq6-Rh0xfuiDSY2vegAW0opuNNPxQs
   caption: "Doing tropical dry forest fieldwork with Peter Williams back in 2023."
+  caption_es: "Trabajo de campo en bosque seco tropical con Peter Williams en 2023."
 
 - id: 1-oX_rO8SYvfDClg6LHwip9t2IiW7iAqX
   caption: "Doing fieldwork in Colorados National Park with Larissa Lotti and our good friends, park rangers Ever and Victor."
+  caption_es: "Trabajo de campo en el Santuario de Fauna y Flora Los Colorados con Larissa Lotti y nuestros buenos amigos, los guardaparques Ever y Víctor."
 
 - id: 1Er54GvpAa_9yAZ5psZlN9Fc1iEud_Zbe
   caption: "With Valeria Meneses, a Colombian undergraduate student, and Larissa Lotti doing fieldwork in 2026."
+  caption_es: "Con Valeria Meneses, estudiante colombiana de pregrado, y Larissa Lotti durante el trabajo de campo de 2026."
 
 - id: 13Q32sQkQgTcRqTOsyWYEpOL2n5mRIkKK
   caption: "Hiking the mountains of Fusagasugá in 2024 with my very good friends."
+  caption_es: "Caminando por las montañas de Fusagasugá en 2024 con mis muy buenos amigos."
 
 - id: 14BY9bxNq2YhmbLN_FbfoZRVZnKykKsiH
   caption: "Hiking the mountains of Parque Chicaque, near Bogotá."
+  caption_es: "Caminando por las montañas del Parque Natural Chicaque, cerca de Bogotá."

@@ -1,16 +1,37 @@
 {% include base_path %}
 
-{% if page.previous or page.next %}
-  <nav class="pagination">
-    {% if page.previous %}
-      <a href="{{ base_path }}{{ page.previous.url }}" class="pagination--pager" title="{{ page.previous.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
-    {% else %}
-      <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
+{% comment %}Previous/next links stay within the same language as the current page.{% endcomment %}
+{% if page.collection %}
+  {% assign pager_docs = site[page.collection] | sort: "date" %}
+  {% if lang == "es" %}
+    {% assign pager_docs = pager_docs | where: "lang", "es" %}
+  {% else %}
+    {% assign pager_docs = pager_docs | where_exp: "p", "p.lang != 'es'" %}
+  {% endif %}
+  {% assign pager_prev = nil %}
+  {% assign pager_next = nil %}
+  {% for d in pager_docs %}
+    {% if d.url == page.url %}
+      {% unless forloop.first %}{% assign i = forloop.index0 | minus: 1 %}{% assign pager_prev = pager_docs[i] %}{% endunless %}
+      {% unless forloop.last %}{% assign i = forloop.index0 | plus: 1 %}{% assign pager_next = pager_docs[i] %}{% endunless %}
     {% endif %}
-    {% if page.next %}
-      <a href="{{ base_path }}{{ page.next.url }}" class="pagination--pager" title="{{ page.next.title | markdownify | strip_html }}">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
+  {% endfor %}
+{% else %}
+  {% assign pager_prev = page.previous %}
+  {% assign pager_next = page.next %}
+{% endif %}
+
+{% if pager_prev or pager_next %}
+  <nav class="pagination">
+    {% if pager_prev %}
+      <a href="{{ base_path }}{{ pager_prev.url }}" class="pagination--pager" title="{{ pager_prev.title | markdownify | strip_html }}">{{ ui.pagination_previous | default: "Previous" }}</a>
     {% else %}
-      <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
+      <a href="#" class="pagination--pager disabled">{{ ui.pagination_previous | default: "Previous" }}</a>
+    {% endif %}
+    {% if pager_next %}
+      <a href="{{ base_path }}{{ pager_next.url }}" class="pagination--pager" title="{{ pager_next.title | markdownify | strip_html }}">{{ ui.pagination_next | default: "Next" }}</a>
+    {% else %}
+      <a href="#" class="pagination--pager disabled">{{ ui.pagination_next | default: "Next" }}</a>
     {% endif %}
   </nav>
 {% endif %}

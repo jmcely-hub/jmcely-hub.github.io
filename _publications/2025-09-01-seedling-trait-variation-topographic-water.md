@@ -1,4 +1,5 @@
 ---
+ref: seedling-trait-variation-topographic-water
 title: "Seedling Trait Variation and Functional Space Occupation Responses to Topographic Water Shifts in a Tropical Dry Forest"
 collection: publications
 category: manuscripts

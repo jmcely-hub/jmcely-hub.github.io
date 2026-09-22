@@ -63,3 +63,22 @@
   .author__avatar img { width: 96px; height: 96px; max-width: none; object-fit: cover; }
   .author__content { vertical-align: middle; padding-left: 15px; }
 }
+
+/* Custom: English / Spanish flag switch in the top bar */
+.greedy-nav .visible-links .masthead__tools {
+  white-space: nowrap;
+  a { display: inline-flex; align-items: center; vertical-align: middle; }
+  .lang-switch { display: inline-flex; align-items: center; gap: 0.45rem; margin-left: 1rem; }
+  .lang-switch__link { margin: 0; padding: 0.5rem 0; opacity: 0.5; transition: opacity 0.15s ease; }
+  .lang-switch__link:hover,
+  .lang-switch__link:focus-visible,
+  .lang-switch__link.is-active { opacity: 1; }
+  .lang-switch__link.is-active:before { transform: scaleX(1); }
+  .lang-flag { display: block; border-radius: 2px; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15); }
+  #theme-toggle { width: 25px; justify-content: center; cursor: pointer; margin: 0 0 0 0.9rem; }
+}
+@media (max-width: 47.9375em) {
+  /* keep the flags and theme icon clear of the menu (hamburger) button on phones */
+  .greedy-nav .visible-links .masthead__tools { padding-right: 3.25rem; }
+  .greedy-nav .visible-links .masthead__tools .lang-switch { margin-left: 0.5rem; }
+}

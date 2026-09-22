@@ -10,6 +10,7 @@
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Researching Tropical Forests"
+title_es                 : "Investigando los Bosques Tropicales"   # site title shown on the Spanish pages
 title_separator          : "-"
 name                     : &name "Juan Manuel Cely"
 description              : &description "Juan Manuel Cely · PhD student in tropical forest ecology at the University of Michigan"   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -26,7 +27,9 @@ author:
   avatar           : "profile_pic.JPG"
   name             : "Juan Manuel Cely"  
   bio              : "Tropical Forest Ecology"
+  bio_es           : "Ecología de Bosques Tropicales"
   employer         : "University of Michigan"
+  employer_es      : "Universidad de Michigan"
   uri              : # URL
   email            :  
 

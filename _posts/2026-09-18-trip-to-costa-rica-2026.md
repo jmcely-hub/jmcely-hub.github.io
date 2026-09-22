@@ -1,4 +1,5 @@
 ---
+ref: trip-to-costa-rica-2026
 title: "Trip to Costa Rica 2026"
 date: 2026-09-18
 permalink: /posts/2026/09/trip-to-costa-rica-2026/

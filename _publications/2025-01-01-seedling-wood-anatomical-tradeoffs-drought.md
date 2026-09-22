@@ -1,4 +1,5 @@
 ---
+ref: seedling-wood-anatomical-tradeoffs-drought
 title: "Linking seedling wood anatomical trade-offs with drought and seedling growth and survival in tropical dry forests"
 collection: publications
 category: manuscripts

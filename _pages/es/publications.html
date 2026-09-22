@@ -1,0 +1,35 @@
+---
+ref: publications
+lang: es
+layout: archive
+title: "Publicaciones"
+permalink: /es/publications/
+author_profile: true
+---
+
+{% include base_path %}
+
+<div class="wordwrap">Los artículos están publicados en inglés; aquí encontrará los resúmenes traducidos al español.
+{% if site.author.googlescholar %} También puede consultar mis artículos en <a href="{{site.author.googlescholar}}">mi perfil de Google Scholar</a>.{% endif %}</div>
+
+{% assign pubs = site.publications | where: "lang", "es" %}
+{% assign category_titles_es = "books:Libros|manuscripts:Artículos en revistas|conferences:Ponencias en congresos" | split: "|" %}
+
+{% for category in site.publication_category %}
+  {% assign heading = category[1].title %}
+  {% for pair in category_titles_es %}
+    {% assign kv = pair | split: ":" %}
+    {% if kv[0] == category[0] %}{% assign heading = kv[1] %}{% endif %}
+  {% endfor %}
+  {% assign title_shown = false %}
+  {% for post in pubs reversed %}
+    {% if post.category != category[0] %}
+      {% continue %}
+    {% endif %}
+    {% unless title_shown %}
+      <h2>{{ heading }}</h2><hr />
+      {% assign title_shown = true %}
+    {% endunless %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endfor %}

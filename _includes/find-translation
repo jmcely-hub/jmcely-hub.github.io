@@ -1,0 +1,18 @@
+{% comment %}
+  Finds the other-language version of the current page.
+  Pages that are translations of each other share the same `ref` in their
+  front matter (e.g. `ref: publications`). Sets:
+    en_url / es_url -> URL of the English / Spanish version
+  If a page has no translation (e.g. the CV), the other flag points to that
+  language's home page.
+{% endcomment %}
+{% assign en_url = "/" %}
+{% assign es_url = "/es/" %}
+{% if lang == "es" %}{% assign es_url = page.url %}{% else %}{% assign en_url = page.url %}{% endif %}
+{% if page.ref %}
+  {% assign tr_candidates = site.pages | concat: site.documents | where: "ref", page.ref %}
+  {% for tr in tr_candidates %}
+    {% if lang == "es" and tr.lang != "es" %}{% assign en_url = tr.url %}{% endif %}
+    {% if lang != "es" and tr.lang == "es" %}{% assign es_url = tr.url %}{% endif %}
+  {% endfor %}
+{% endif %}

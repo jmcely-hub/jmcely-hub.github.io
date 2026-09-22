@@ -1,4 +1,5 @@
 ---
+ref: liana-tree-seedlings-wood-anatomy
 title: "Wood Anatomical and Demographic Similarities Between Self-Standing Liana and Tree Seedlings in Tropical Dry Forests of Colombia"
 collection: publications
 category: manuscripts

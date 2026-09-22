@@ -1,11 +1,10 @@
 ---
 ref: blog
+lang: es
 layout: archive
-permalink: /year-archive/
-title: "Photos & Blog Posts"
+permalink: /es/year-archive/
+title: "Fotos y blog"
 author_profile: true
-redirect_from:
-  - /wordpress/blog-posts/
 ---
 
 {% include base_path %}
@@ -25,11 +24,11 @@ redirect_from:
 .pl-close{position:absolute;top:12px;right:16px;background:none;border:0;color:#fff;font-size:34px;cursor:pointer;line-height:1;}
 </style>
 
-<h2 class="archive__subtitle">Blog Posts</h2>
+<h2 class="archive__subtitle">Entradas del blog</h2>
 
 {% capture written_year %}'None'{% endcapture %}
-{% assign en_posts = site.posts | where_exp: "p", "p.lang != 'es'" %}
-{% for post in en_posts %}
+{% assign es_posts = site.posts | where: "lang", "es" %}
+{% for post in es_posts %}
   {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
   {% if year != written_year %}
     <h3 id="{{ year | slugify }}">{{ year }}</h3>
@@ -38,23 +37,23 @@ redirect_from:
   {% include archive-single.html %}
 {% endfor %}
 
-<h2 class="archive__subtitle">Photo Library</h2>
+<h2 class="archive__subtitle">Galería de fotos</h2>
 
 <div class="pl-grid">
 {% for p in site.data.photos %}
   <figure class="pl-item">
-    <img src="https://lh3.googleusercontent.com/d/{{ p.id }}=w800" data-full="https://lh3.googleusercontent.com/d/{{ p.id }}=w2000" data-alt="https://drive.google.com/thumbnail?id={{ p.id }}&sz=w2000" alt="{{ p.caption | escape }}" loading="lazy" onerror="this.onerror=null;this.src='https://drive.google.com/thumbnail?id={{ p.id }}&sz=w800'" onclick="plOpen({{ forloop.index0 }})">
-    <figcaption>{{ p.caption }}</figcaption>
+    <img src="https://lh3.googleusercontent.com/d/{{ p.id }}=w800" data-full="https://lh3.googleusercontent.com/d/{{ p.id }}=w2000" data-alt="https://drive.google.com/thumbnail?id={{ p.id }}&sz=w2000" alt="{{ p.caption_es | default: p.caption | escape }}" loading="lazy" onerror="this.onerror=null;this.src='https://drive.google.com/thumbnail?id={{ p.id }}&sz=w800'" onclick="plOpen({{ forloop.index0 }})">
+    <figcaption>{{ p.caption_es | default: p.caption }}</figcaption>
   </figure>
 {% endfor %}
 </div>
 
 <div class="pl-box" id="plBox" onclick="if(event.target===this)plClose()">
-  <button class="pl-close" aria-label="Close" onclick="plClose()">&times;</button>
-  <button class="pl-nav pl-prev" aria-label="Previous photo" onclick="plStep(-1)">&#8249;</button>
+  <button class="pl-close" aria-label="Cerrar" onclick="plClose()">&times;</button>
+  <button class="pl-nav pl-prev" aria-label="Foto anterior" onclick="plStep(-1)">&#8249;</button>
   <img id="plImg" alt="">
   <p id="plCap"></p>
-  <button class="pl-nav pl-next" aria-label="Next photo" onclick="plStep(1)">&#8250;</button>
+  <button class="pl-nav pl-next" aria-label="Foto siguiente" onclick="plStep(1)">&#8250;</button>
 </div>
 
 <script>

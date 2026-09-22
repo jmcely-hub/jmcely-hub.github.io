@@ -40,6 +40,17 @@ en: &DEFAULT_EN
   comment_success_msg        : "Thanks for your comment! It will show on the site once it has been approved."
   comment_error_msg          : "Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again."
   loading_label              : "Loading..."
+  # Added for the English/Spanish switch
+  follow_btn                 : "Follow"
+  published_in               : "Published in"
+  recommended_citation       : "Recommended citation:"
+  download_paper             : "Download Paper"
+  download_slides            : "Download Slides"
+  download_bibtex            : "Download Bibtex"
+  site_updated               : "Site last updated"
+  fork_of                    : "a fork of"
+  switch_to_en               : "View this page in English"
+  switch_to_es               : "Ver esta página en español"
 en-US:
   <<: *DEFAULT_EN
 en-CA:
@@ -65,7 +76,7 @@ es: &DEFAULT_ES
   meta_label                 :
   tags_label                 : "Etiquetas:"
   categories_label           : "Categorías:"
-  date_label                 : "Actualizado:"
+  date_label                 : "Publicado:"
   comments_label             : "Comentar"
   comments_title             : "Deja un comentario"
   more_label                 : "Ver más"
@@ -76,7 +87,7 @@ es: &DEFAULT_ES
   website_label              : "Sitio web"
   email_label                : "Correo"
   recent_posts               : "Entradas recientes"
-  site_map                   :
+  site_map                   : "Mapa del sitio"
   undefined_wpm              : "Parámetro words_per_minute (palabras por minuto) no definido en _config.yml"
   comment_form_info          : "No se publicará tu correo electrónico. Véanse marcados los campos obligatorios"
   comment_form_comment_label : "Comentario"
@@ -89,6 +100,17 @@ es: &DEFAULT_ES
   comment_success_msg        : "¡Gracias por tu comentario! Aparecerá en la página cuando sea aprobado." 
   comment_error_msg          : "Lo sentimos, ha habido un error con tu solicitud. Por favor, asegúrate de rellenar todos los campos obligatorios e inténtalo de nuevo."
   loading_label              : "Cargando..."
+  # Added for the English/Spanish switch
+  follow_btn                 : "Seguir"
+  published_in               : "Publicado en"
+  recommended_citation       : "Cita recomendada:"
+  download_paper             : "Descargar artículo"
+  download_slides            : "Descargar diapositivas"
+  download_bibtex            : "Descargar BibTeX"
+  site_updated               : "Última actualización del sitio:"
+  fork_of                    : "una derivación de"
+  switch_to_en               : "View this page in English"
+  switch_to_es               : "Ver esta página en español"
 es-ES:
   <<: *DEFAULT_ES
 es-CO:

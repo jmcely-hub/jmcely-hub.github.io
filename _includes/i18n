@@ -1,0 +1,19 @@
+{% comment %}
+  Language helpers (English / Spanish). Included from base_path, so every
+  template has access to:
+    lang        -> "en" or "es" (set `lang: es` in a page's front matter)
+    lang_prefix -> "" or "/es"
+    ui          -> the ui-text strings for the current language
+    site_title  -> site.title, or site.title_es on Spanish pages
+{% endcomment %}
+{% if page.lang == "es" %}
+  {% assign lang = "es" %}
+  {% assign lang_prefix = "/es" %}
+  {% assign ui = site.data.ui-text["es"] %}
+  {% assign site_title = site.title_es | default: site.title %}
+{% else %}
+  {% assign lang = "en" %}
+  {% assign lang_prefix = "" %}
+  {% assign ui = site.data.ui-text[site.locale] %}
+  {% assign site_title = site.title %}
+{% endif %}

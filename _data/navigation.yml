@@ -23,3 +23,17 @@ main:
   # - title: "CV"
   #   url: /cv-json/
     
+
+# Spanish menu (used on pages with `lang: es`). The CV is only in English.
+main_es:
+  - title: "Publicaciones"
+    url: /es/publications/
+
+  - title: "Charlas y docencia"
+    url: /es/talks/
+
+  - title: "Fotos y blog"
+    url: /es/year-archive/
+
+  - title: "CV"
+    url: /cv/

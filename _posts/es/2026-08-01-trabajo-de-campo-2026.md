@@ -1,13 +1,14 @@
 ---
 ref: field-work-2026
-title: "Field Work 2026"
+lang: es
+title: "Trabajo de campo 2026"
 date: 2026-08-01
-permalink: /posts/2026/08/field-work-2026/
-excerpt: "Back in Colombia for the sixth seedling census in tropical dry forests, with lots of wonderful fauna and flora along the way."
+permalink: /es/posts/2026/08/trabajo-de-campo-2026/
+excerpt: "De vuelta en Colombia para el sexto censo de plántulas en los bosques secos tropicales, con muchísima fauna y flora maravillosa en el camino."
 tags:
-  - field work
+  - trabajo de campo
   - Colombia
-  - tropical dry forest
+  - bosque seco tropical
 ---
 
 <style>
@@ -28,20 +29,20 @@ tags:
 
 <div class="fw-wrap">
   <div class="fw-text">
-    <p>During the summer of 2026, I traveled to my home country, Colombia, to conduct the sixth census of a long-term program monitoring seedling dynamics in tropical dry forests, led by my advisor, Dr. María Natalia Umaña. This time I was joined by Larissa Lotti, a Brazilian ecologist and fellow member of our lab.</p>
-    <p>We had so much fun and saw so much wonderful fauna and flora along the way!</p>
-    <p>If you are interested in conducting research in Colombia, feel free to email me and we can find a way!</p>
+    <p>Durante el verano de 2026 viajé a mi país, Colombia, para realizar el sexto censo de un programa de monitoreo a largo plazo de la dinámica de plántulas en los bosques secos tropicales, liderado por mi asesora, la Dra. María Natalia Umaña. Esta vez me acompañó Larissa Lotti, ecóloga brasileña y compañera de nuestro laboratorio.</p>
+    <p>¡Nos divertimos muchísimo y vimos una fauna y una flora maravillosas en el camino!</p>
+    <p>Si le interesa hacer investigación en Colombia, no dude en escribirme a mi correo: ¡seguro encontramos la manera!</p>
   </div>
   <div class="fw-gallery">
     <div class="fw-track" id="fwTrack">
-      <img src="/images/blog1.jpg" alt="Field work 2026, photo 1" loading="lazy">
-      <img src="/images/blog2.jpeg" alt="Field work 2026, photo 2" loading="lazy">
-      <img src="/images/blog3.jpeg" alt="Field work 2026, photo 3" loading="lazy">
-      <img src="/images/blog4.jpeg" alt="Field work 2026, photo 4" loading="lazy">
-      <img src="/images/blog5.jpeg" alt="Field work 2026, photo 5" loading="lazy">
+      <img src="/images/blog1.jpg" alt="Trabajo de campo 2026, foto 1" loading="lazy">
+      <img src="/images/blog2.jpeg" alt="Trabajo de campo 2026, foto 2" loading="lazy">
+      <img src="/images/blog3.jpeg" alt="Trabajo de campo 2026, foto 3" loading="lazy">
+      <img src="/images/blog4.jpeg" alt="Trabajo de campo 2026, foto 4" loading="lazy">
+      <img src="/images/blog5.jpeg" alt="Trabajo de campo 2026, foto 5" loading="lazy">
     </div>
-    <button class="fw-btn fw-prev" aria-label="Previous photo" onclick="fwGo(-1)">&#8249;</button>
-    <button class="fw-btn fw-next" aria-label="Next photo" onclick="fwGo(1)">&#8250;</button>
+    <button class="fw-btn fw-prev" aria-label="Foto anterior" onclick="fwGo(-1)">&#8249;</button>
+    <button class="fw-btn fw-next" aria-label="Foto siguiente" onclick="fwGo(1)">&#8250;</button>
     <div class="fw-dots" id="fwDots"></div>
   </div>
 </div>

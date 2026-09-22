@@ -1,4 +1,5 @@
 ---
+ref: ontogenetic-shifts-wood-anatomy-leaf-traits
 title: "Ontogenetic shifts in wood anatomy and leaf traits in tropical dry forests"
 collection: publications
 category: manuscripts
